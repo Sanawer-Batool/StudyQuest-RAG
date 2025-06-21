@@ -216,7 +216,7 @@ def main():
         st.markdown('<h3 style="color: #00c4cc; text-align: center;">Upload Your Study Material</h3>', unsafe_allow_html=True)
         st.markdown("""
         <div class="instructions">
-        Upload a PDF or enter a YouTube video ID. The chatbot will answer questions based solely on the provided materials.
+        Upload a PDF or enter a YouTube video ID!
         </div>
         """, unsafe_allow_html=True)
         
@@ -226,8 +226,8 @@ def main():
         if 'youtube_id' not in st.session_state:
             st.session_state.youtube_id = ""
 
-        uploaded_file = st.file_uploader("Choose a PDF file", type=["pdf"], key="pdf_uploader")
-        youtube_id = st.text_input("Enter YouTube Video ID (e.g., Gfr50f6ZBvo)", key="youtube_id_input", value=st.session_state.youtube_id)
+        uploaded_file = st.file_uploader("Choose a PDF file:", type=["pdf"], key="pdf_uploader")
+        youtube_id = st.text_input("Enter YouTube Video ID:", key="youtube_id_input", value=st.session_state.youtube_id)
 
         # Clear All button
         if st.button("Clear All"):
