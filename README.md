@@ -30,9 +30,9 @@ git clone https://github.com/Sanawer-Batool/StudyQuest-RAG.git
 cd StudyQuest-RAG
 
 
-Create a Virtual Environment:
+Create a Virtual Environment:(on Windows)
 python -m venv venv
-# On Windows: venv\Scripts\activate
+venv\Scripts\activate
 
 
 ### Install Dependencies:
