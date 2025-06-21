@@ -3,3 +3,5 @@ notes/
 __pycache__/
 *.pyc
 .env
+test.py
+youtubeFunc.py
